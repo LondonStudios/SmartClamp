@@ -69,8 +69,8 @@ namespace SmartClamp
             SetNetworkIdExistsOnAllMachines(VehToNet(vehicle), true);
             if (type == 0)
             {
-                RequestModel((uint)GetHashKey("p_car_keys_01"));
-                Object = CreateObject(GetHashKey("p_car_keys_01"), coords.X, coords.Y, coords.Z, true, true, true);
+                RequestModel((uint)GetHashKey("prop_clamp"));
+                Object = CreateObject(GetHashKey("prop_clamp"), coords.X, coords.Y, coords.Z, true, true, true);
                 var boneIndex = GetEntityBoneIndexByName(vehicle, "wheel_lf");
                 SetEntityHeading(Object, 0f);
                 SetEntityRotation(Object, 60f, 20f, 10f, 1, true);
